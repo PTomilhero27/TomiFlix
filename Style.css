@@ -1,3 +1,5 @@
+/* config basica do css */
+
 * {
     padding: 0;
     margin: 0;
@@ -18,15 +20,41 @@ a {
 }
 
 body {
-    background-color: #050003;
+    background-color: #0D0D0D;
     color: white;
     background-size: cover;
     overflow-x: hidden;
 }
 
+
+/* config dos modos  do css */
+
+#modoDark {
+    display: none;
+    color: black;
+}
+
+.alura {
+    width: 20rem;
+}
+
 #container {
     height: 100vh;
     width: 100vw;
+    padding: 3rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header button {
+    font-size: 2.6rem;
+    background: none;
+    color: white;
+    border: none;
 }
 
 #content {
@@ -35,9 +63,8 @@ body {
     padding: 3rem;
 }
 
-#jogos {
-    margin: 0 1rem;
-}
+
+/* css botoes*/
 
 #jogo,
 #filme,
@@ -63,22 +90,29 @@ body {
     color: #fff;
 }
 
-#filmes {
+#filmes,
+#jogos {
     color: white;
     width: 100%;
     display: none;
 }
 
-#filmes fieldset {
+
+/* css apresentação filme/jogos/livros */
+
+#filmes fieldset,
+#jogos fieldset {
     margin: 2rem 0;
 }
 
-#filmes legend {
+#filmes legend,
+#jogos legend {
     font-family: Archivo;
     font-size: 3rem;
 }
 
-#filmes fieldset button {
+#filmes fieldset button,
+#jogos fieldset button {
     height: 20rem;
     border: none;
     width: 15rem;
@@ -87,15 +121,24 @@ body {
     cursor: pointer;
 }
 
-#filmes fieldset button img {
+#filmes fieldset button img,
+#jogos fieldset button img {
     border: 1px solid red;
     border-radius: 0.8rem;
+    box-shadow: 0px 0 30px rgba(141, 14, 14, 0.8);
 }
 
 #filmes fieldset button h1 {
     color: white;
-    margin: 0 0 0 1.5rem;
 }
+
+#jogos fieldset button h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+
+/* css dos banner filmes  */
 
 #tePeguei,
 #compadecida,
@@ -138,8 +181,43 @@ body {
     cursor: pointer;
 }
 
+
+/* css dos rodapé */
+
+footer {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+#jogos fieldset button,
+#filmes fieldset button {
+    width: 20rem;
+}
+
+#jogos .img {
+    width: 19.5rem;
+    height: 26rem;
+}
+
+footer p {
+    font: 700 2.6rem Archivo;
+}
+
+footer p img {
+    width: 5rem;
+}
+
+
+/* css dos medias query */
+
 @media (min-width: 0) {
-    #filmes fieldset {
+    #filmes fieldset,
+    #jogos fieldset {
         height: 125rem;
     }
     #filme {
@@ -160,13 +238,15 @@ body {
 }
 
 @media (min-width: 520px) {
-    #filmes fieldset {
+    #filmes fieldset,
+    #jogos fieldset {
         height: 70rem;
     }
 }
 
 @media (min-width: 950px) {
-    #filmes fieldset {
+    #filmes fieldset,
+    #jogos fieldset {
         height: 36rem;
     }
     #filme {

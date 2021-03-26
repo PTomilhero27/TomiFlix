@@ -15,14 +15,29 @@
 
 <body>
     <div id="container">
+
+        <!-- header da pagina  -->
+
+        <header id="header">
+            <img src="https://fontmeme.com/temporary/94d2e3386d2b0aeab186db7b5fcb0010.png" alt="Logo TomiFlix">
+            <button id="modo" onclick="Luz()">Modo escuro: <strong >ON</strong></button>
+            <button id="modoDark" onclick="Dark()">Modo escuro: <strong >OFF</strong></button>
+        </header>
+
+
+
         <div id="content">
             <Button id="filme" onclick="Aparecer()">Veja os Filmes </Button>
+
+
+
+            <!-- apresentação dos Filmes  -->
             <div id="filmes">
-                <Button id="voltar" onclick="home()">AluraFlix </Button>
+                <Button id="voltar" onclick="home()">TomiFlex </Button>
 
 
                 <fieldset>
-                    <legend>Comedia</legend>
+                    <legend id="legend">Comédia</legend>
                     <button onclick="Aladdin()">
                         <img src="https://m.media-amazon.com/images/M/MV5BMjQ2ODIyMjY4MF5BMl5BanBnXkFtZTgwNzY4ODI2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="Filme Alladin">
                         <h1>Aladdin</h1>
@@ -43,7 +58,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Meus gosto</legend>
+                    <legend id="legends">Populares</legend>
                     <button onclick="Potter()">
                         <img src="https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="Filme Harry potter">
                         <h1> potter</h1>
@@ -64,6 +79,8 @@
                 </fieldset>
 
             </div>
+
+            <!-- Inicio Filmes trailers -->
             <div id="tePeguei">
                 <h1>Te Peguei</h1>
                 <button onclick="voltar()">X</button>
@@ -97,7 +114,7 @@
             <div id="wars">
                 <h1>Star Wars: O Despertar da Força</h1>
                 <button onclick="voltar()">X</button>
-                <video controls src="https://imdb-video.media-imdb.com/vi2762323481/1434659607842-pgv4ql-1473477553262.mp4?Expires=1616782217&Signature=HWEAmkch9j14sR983WUYsfJ37eSraGNOYtJLmruYCTY3g8aWLmc1w8nVHLnLnGrmuuktN55mjdXYdWhqMLC1mOrr9GV9FdLq2td~Fu30ni6WLF3DpAB3nVlF1MvUrT0ZPO7tdRJmsCCHTmVLFfIEFRbswAkcim0xLhPHk2YyUTRcpGUFQwuFegcyyPS1kqaqnHRI6n6em4A0RjBoNGoSaJtO2ajQ6z~ZPMfYMmJoJayXKzJtsSSPDDXJezO5f-HPWAZY9qck80dKf4luWzfVUdEj8HT003o2RJK0EmpC3h7OiKSwOuLcLq0tzDOS3LV2FzWbz9G0vo9UVuxBeFx6-A__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                <video controls src="https://imdb-video.media-imdb.com/vi2762323481/1434659607842-pgv4ql-1473477553262.mp4?Expires=1616797448&Signature=SlxQniRPANKmXIl8q0ErIpuQtVorL0BCrz-6W4yHI~-KyiXWsR~0wXNNU2hfJVjZoPAuH5Lphe5BNbtGeH5afBoHQsoI2Ikrm3V79L40AYiLQ5yt48VztBjB1Ano6gAmT4nZZov3vDceGOv7NM2oXk9jQXCp4KvQ~MVt0hBtLUoX22vrQRit7i55oh11XkCiDuoZtFZkIr7BKkq1~Gjar00-u8XrCBN-YdVjjaFxY5U~JAWO0~pnna7Ut3ZE9fsRdVoxCde4PUZ-3DMFPl8W3Hhcx1o2en7eWQuLnqbt3WMFO1hgj4tpQZ7sAynrh9tIgOqX6ZQOjcSxt~o0M6d~Vg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
                     width="100%" height="100%"></video>
             </div>
 
@@ -114,19 +131,83 @@
                     width="100%" height="100%"></video>
             </div>
 
+            <!--Final  Filmes trailers -->
 
 
 
 
+
+            <Button onclick="AparecerJogo()" id="jogo" style="--color:#85f829">Veja os Jogos </Button>
+
+            <!-- apresentação dos Jogos  -->
 
 
             <div id="jogos">
-                <Button onclick="erro()" id="jogo" style="--color:#85f829">Veja os Jogos </Button>
+
+                <Button id="voltar" onclick="home()">TomiFlex </Button>
+
+
+                <fieldset>
+                    <legend id="legen">De época </legend>
+                    <button>
+                        <img class="img" src="https://i.ebayimg.com/images/g/2dsAAOSwfA5e8~DK/s-l400.jpg" alt="Jogo GTA ">
+                        <h1>GTA San Andreas</h1>
+                    </button>
+                    <button>
+                        <img class="img" src="https://th.bing.com/th/id/Rddcb75aeb5aaefde1f1f93a89509437d?rik=LpVOz08I7%2bNrJg&riu=http%3a%2f%2f1.bp.blogspot.com%2f_RR1dRZ0bmGs%2fTTkIIIuVGtI%2fAAAAAAAACCk%2fruGMtkdi558%2fs1600%2fbully%252Bps2.jpg&ehk=CtrtLCw72b3fBp8GBb21AHG%2fmfLdDobx9Mo0QsySPV0%3d&risl=&pid=ImgRaw" alt="Jogo Bulling">
+                        <h1> Bulling </h1>
+                    </button>
+                    <button>
+                        <img class="img" src="https://th.bing.com/th/id/Rf356a7c8f59a09707868622096b9eb68?rik=sPC1eH9wElavpg&riu=http%3a%2f%2fecx.images-amazon.com%2fimages%2fI%2f51DFE4MVJEL.jpg&ehk=leKnjqi7SZs6q20IwJXXRLIah%2f3JMdlwAYuhSm06hdI%3d&risl=&pid=ImgRaw" alt="Jogo Need of Speed Underground">
+                        <h1> Underground  </h1>
+                    </button>
+                    <button>
+                        <img class="img" src="https://th.bing.com/th/id/R726ed444b407e764e8da23998f097376?rik=4zE4RYb7kqxe%2bw&riu=http%3a%2f%2fgeomatrixgames.com%2floja%2fimages%2fps2_godwar2dvd99.jpg%3fosCsid%3d34c756462e7571645e2b30f5961ae591&ehk=tU1n2Gh%2bINPALhpeK7jTJysFFFMCaSSndIZuHpv6lh4%3d&risl=&pid=ImgRaw" alt="Jogo God of War">
+                        <h1> god of War </h1>
+                    </button>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend id="legens">Populares</legend>
+                    <button>
+                        <img class="img" src="https://i.pinimg.com/736x/38/85/3f/38853ffeb076db939f201061b3ca9106.jpg" alt="Filme Harry potter">
+                        <h1> League of Legends</h1>
+                    </button>
+                    <button>
+                        <img class="img" src="https://th.bing.com/th/id/Rc7c541fd332687e3cfff8e0ef94bd326?rik=EHwgLwagKdNTyA&riu=http%3a%2f%2fwww.mobygames.com%2fimages%2fcovers%2fl%2f501538-counter-strike-global-offensive-playstation-3-front-cover.jpg&ehk=6HZVtMYkBdxT0GEUiW0oNjO9duGGroOz51InpJO%2fhjc%3d&risl=&pid=ImgRaw" alt="Jogo CS GO">
+                        <h1> CS: GO </h1>
+                    </button>
+                    <button>
+                        <img class="img" src="https://as01.epimg.net/meristation/imagenes/2020/03/02/game_cover/859678831583141658.jpg" alt="Jogo Valorant">
+                        <h1> Valorant </h1>
+                    </button>
+                    <button>
+                        <img class="img" src="https://cdn.releases.com/img/image/35ef95ae-5197-4f67-a0cb-54a400dc0fba.jpg/300" alt="Jogo Overwatch">
+                        <h1> OverWatch  </h1>
+                    </button>
+
+                </fieldset>
+
+
+
+
             </div>
+
+
+            <!-- apresentação dos Livros  -->
+
             <div id="livros">
                 <Button onclick="erro()" id="livro" style="--color:#f800ed">Veja os Livros </Button>
             </div>
         </div>
+
+        <!-- rodapé da pagina  -->
+
+        <footer>
+            <img class="alura" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" alt="logo alura">
+            <p> <a href=""> GitHub</a> | <a href="">CodePen </a>&copy; <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="Logo Alura"></p>
+        </footer>
     </div>
 </body>
 <script src="main.js"></script>
